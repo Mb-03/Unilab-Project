@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <div className="w-full max-w-[1440px] flex mx-auto relative ">
       <img src="./heroLeft.png" alt="shopping Image" />
-      <img src="./heroRight.png" alt="background img" />
+      <img src="./heroRight.png" alt="background img" className="max-w-full object-contain"/>
       <div className="absolute top-[120px] flex flex-col gap-8 items-center right-[208px]">
         <h3 className=" font-[latoBold] text-[32px] text-white  ">
           KIMONOS, CAFTANS & PAREOS
