@@ -44,7 +44,7 @@ const AboutUs = () => {
             className="flex flex-col gap-8"
             onSubmit={handleSubmit(onSubmit)}
           >
-            <div className="flex flex-col space-y-3">
+            <div className="flex flex-col space-y-3 relative">
               <label htmlFor="name" className="text-white">
                 Your Name
               </label>
@@ -53,15 +53,16 @@ const AboutUs = () => {
                 type="text"
                 id="name"
                 placeholder="Enter Your Name here"
-                className="border-[#D9D9D9] border rounded-sm px-2.5 py-4 text-[#9D9D9D]"
+                className="border-[#D9D9D9] border rounded-sm px-2.5 pl-12 py-4 text-[#9D9D9D]"
               />
               {errors.name && (
                 <p className="text-red-600 font-[latoBold]">
                   {errors.name.message}
                 </p>
               )}
+              <img src="./signIn.svg" alt="avatar" className="absolute w-6 h-6 top-[54px] left-[10px] " />
             </div>
-            <div className="flex flex-col space-y-3">
+            <div className="flex flex-col space-y-3 relative">
               <label htmlFor="email" className="text-white">
                 Email
               </label>
@@ -70,13 +71,14 @@ const AboutUs = () => {
                 type="text"
                 id="email"
                 placeholder="Enter Your Email here"
-                className="border-[#D9D9D9] border rounded-sm px-2.5 py-4 text-[#9D9D9D]"
+                className="border-[#D9D9D9] border rounded-sm px-2.5 pl-12 py-4 text-[#9D9D9D]"
               />
               {errors.email && (
                 <p className="text-red-600 font-[latoBold]">
                   {errors.email.message}
                 </p>
               )}
+              <img src="./mail.svg" alt="avatar" className="absolute w-6 h-6 top-[54px] left-[10px] " />
             </div>
             <div className="flex flex-col space-y-3">
               <label htmlFor="description" className="text-white">

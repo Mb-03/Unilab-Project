@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
     <div>
-      <div className="bg-[#D1E2EB] w-full">
-        <footer className="max-w-[1440px] mx-auto">
+      <div className="bg-[#D1E2EB] w-full mt-[155px]">
+        <footer className="max-w-[1440px] mx-auto relative">
           <nav className="flex gap-[126px] px-[250px] pb-[60px] pt-[130px]">
             <div>
               <span className=" font-[latoBold] text-[#262626] text-[14px]">
@@ -72,6 +72,27 @@ const Footer = () => {
               </ul>
             </div>
           </nav>
+         <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-[500px] bg-[#7296AB] rounded-lg py-8 px-14 flex flex-col items-center">
+            <h4 className="font-[latoBold] text-white text-[32px] mb-[23px]">
+              Luminaee <span className="text-[#D1E2EB]">Store</span>
+            </h4>
+            <p className="text-white text-[16px] font-[latoRegular] mb-6">
+              Register your email not to miss the last minutes off+ Free
+              delivery
+            </p>
+            <div className="relative w-full flex justify-center">
+              <input
+                type="text"
+                placeholder="Enter your email"
+                className="bg-white py-2 px-3 rounded-lg w-full max-w-[260px]"
+              />
+              <img
+                src="./footerEmailIcon.svg"
+                alt="send email"
+                className="absolute right-[25%] top-1/2 transform -translate-y-1/2"
+              />
+            </div>
+          </div>
         </footer>
       </div>
     </div>
